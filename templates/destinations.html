@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+    </head>
+<body>
+   
+    {% if user.is_authenticated %}
+    <li>Welcome to destinations</li> 
+									
+    {% else %}
+    <h1>Either Login or Register</h1>
+    <h1></h1><a href="login">Login</a></h1>
+    <h2></h2><a href="register">Register</a></h2>
+								
+    {% endif %}
+
+</body>
+</html>
